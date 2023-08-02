@@ -8,15 +8,12 @@
     <meta name="description" content="Лучшая выпечка в городе">
 </head>
 <body>
-Hello world
+
 <center>
-    <form action="/register" method="post">
-        Email<input name="email" type="email"/> <br>
-        Password <input name="password" type="password"/> <br>
-        Repeat password <input name="rpassword" type="password"/> <br>
-        <button type="submit">Register</button>
-    </form>
+    <h1> You can register if you want!</h1>
+    <a href="/register">Register</a>
 </center>
+
 
 </body>
 </html>

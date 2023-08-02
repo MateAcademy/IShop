@@ -7,13 +7,13 @@
 
 
   <servlet>
-    <servlet-name>UserControllerServler</servlet-name>
-    <servlet-class>ua.ishop.klunniy.controller.UserControllerServlet</servlet-class>
+    <servlet-name>UserRegistrationServlet</servlet-name>
+    <servlet-class>ua.ishop.klunniy.controller.UserRegistrationServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>UserControllerServler</servlet-name>
+    <servlet-name>UserRegistrationServlet</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
 
