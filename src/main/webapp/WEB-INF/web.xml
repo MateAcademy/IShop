@@ -5,7 +5,6 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-
   <servlet>
     <servlet-name>UserRegistrationServlet</servlet-name>
     <servlet-class>ua.ishop.klunniy.controller.UserRegistrationServlet</servlet-class>
