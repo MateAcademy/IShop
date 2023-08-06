@@ -12,7 +12,7 @@ public class Storage {
     private static final List<User> users = new ArrayList<>();
 
     public static void addUser(User user) {
-        if (user !=null) {
+        if (user != null) {
             users.add(user);
         }
     }

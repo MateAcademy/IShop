@@ -12,17 +12,15 @@
 </head>
 <body>
 
-<p >
+<center>
+<p>
     <%
-        int a = 5;
-        int b = 10;
-
         String error = (String) request.getAttribute("error");
         if (error != null) {
             response.getWriter().write(error);
         }
     %>
-<p>
+</p>
     <form action="/register" method="post">
         Email<input name="email" type="email"/> <br>
         Password <input name="password" type="password"/> <br>
@@ -31,9 +29,8 @@
     </form>
 </center>
 
-
 <%
-    int c = a + 88;
+
 
 %>
 
