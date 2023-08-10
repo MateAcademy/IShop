@@ -1,11 +1,10 @@
 package ua.ishop.klunniy.controller;
 
-import ua.ishop.klunniy.db.Storage;
+import ua.ishop.klunniy.factory.UserServiceFactory;
 import ua.ishop.klunniy.model.User;
 import ua.ishop.klunniy.service.UserService;
-import ua.ishop.klunniy.service.imp.UserServiceImpl;
 
-import javax.servlet.ServletConfig;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,11 +16,14 @@ import java.io.IOException;
  */
 public class UserRegistrationServlet extends HttpServlet {
 
-    private static final UserService userService = new UserServiceImpl();
+    private static final UserService userService = UserServiceFactory.getUserService();
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("register.jsp").forward(req, resp);
+
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("register.jsp");
+        requestDispatcher.forward(req, resp);
     }
 
     @Override

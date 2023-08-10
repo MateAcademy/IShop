@@ -13,14 +13,19 @@
 <body>
 
 <center>
-<p>
-    <%
-        String error = (String) request.getAttribute("error");
-        if (error != null) {
-            response.getWriter().write(error);
-        }
-    %>
-</p>
+    <p>
+
+
+
+    <center>
+        <%
+            String error = (String) request.getAttribute("error");
+            if (error != null) {
+                response.getWriter().write(error);
+            }
+        %>
+    </center>
+    </p>
     <form action="/register" method="post">
         Email<input name="email" type="email"/> <br>
         Password <input name="password" type="password"/> <br>
@@ -28,12 +33,6 @@
         <button type="submit">Register</button>
     </form>
 </center>
-
-<%
-
-
-%>
-
 
 </body>
 </html>
