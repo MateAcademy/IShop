@@ -16,7 +16,7 @@ public class UserDaoFactory {
 
     public static synchronized UserDao getUserDao() {
         if (instance == null) {
-            instance = new UserDaoPostgresImpl();
+            instance = new UserDaoImpl();
         }
         return instance;
     }

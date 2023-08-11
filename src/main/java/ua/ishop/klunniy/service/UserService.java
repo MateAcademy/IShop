@@ -10,4 +10,6 @@ import java.util.List;
 public interface UserService {
     void addUser(User user);
     List<User> getUsers();
+
+    User getUserByEmail(String email);
 }

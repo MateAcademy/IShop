@@ -21,4 +21,8 @@ public class UserDaoImpl implements UserDao {
     public List<User> getUsers() {
         return Storage.getUsers();
     }
+
+    public User getUserByEmail(String email) {
+        return Storage.getUserByEmail(email);
+    };
 }

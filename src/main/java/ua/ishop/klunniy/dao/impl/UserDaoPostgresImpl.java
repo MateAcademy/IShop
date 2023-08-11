@@ -18,4 +18,9 @@ public class UserDaoPostgresImpl implements UserDao {
     public List<User> getUsers() {
         return null;
     }
+
+    @Override
+    public User getUserByEmail(String email) {
+        return null;
+    }
 }
