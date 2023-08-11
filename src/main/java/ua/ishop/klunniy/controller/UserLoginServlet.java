@@ -1,5 +1,6 @@
 package ua.ishop.klunniy.controller;
 
+import org.apache.log4j.Logger;
 import ua.ishop.klunniy.factory.UserServiceFactory;
 import ua.ishop.klunniy.model.User;
 import ua.ishop.klunniy.service.UserService;
@@ -13,12 +14,15 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Objects;
 
+
 /**
  * @author Serhii Klunniy
  */
 
 @WebServlet("/login")
 public class UserLoginServlet extends HttpServlet {
+
+    private static final Logger logger = Logger.getLogger(UserLoginServlet.class);
 
     private static final UserService userService = UserServiceFactory.getUserService();
 

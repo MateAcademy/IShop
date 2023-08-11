@@ -19,6 +19,7 @@
 //public class AllUserServlet extends HttpServlet {
 //
 //    private static final UserService userService = new UserServiceImpl();
+//private static final Logger logger = Logger.getLogger(AllUserServlet.class);
 //
 //    @Override
 //    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

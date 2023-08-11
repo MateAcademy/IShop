@@ -1,6 +1,8 @@
 package ua.ishop.klunniy.service.imp;
 
 
+import org.apache.log4j.Logger;
+import ua.ishop.klunniy.controller.UserLoginServlet;
 import ua.ishop.klunniy.dao.UserDao;
 import ua.ishop.klunniy.dao.impl.UserDaoImpl;
 import ua.ishop.klunniy.dao.impl.UserDaoPostgresImpl;
@@ -14,7 +16,7 @@ import java.util.List;
  * @author Serhii Klunniy
  */
 public class UserServiceImpl implements UserService {
-
+    private static final Logger logger = Logger.getLogger(UserServiceImpl.class);
     private static final UserDao userDao = UserDaoFactory.getUserDao();
 
 
