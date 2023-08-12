@@ -14,6 +14,7 @@ public class Storage {
     private static final Logger logger = Logger.getLogger(Storage.class);
     private static final List<User> users = new ArrayList<>() {{
         add(new User("s.klunniy@gmail.com", "123"));
+        add(new User("s.klunniy1@gmail.com", "123"));
     }};
 
     public static void addUser(User user) {
