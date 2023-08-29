@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Sergey
-  Date: 11.08.2023
-  Time: 3:20
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -17,11 +10,19 @@
 </center>
 
 <%
-    Integer countUserEnterToLogin = (Integer) session.getAttribute("count");
-    if (countUserEnterToLogin != null) {
-        out.println("<h2> count = " + countUserEnterToLogin + "</h2>");
+    Integer numberOfLogins = (Integer) session.getAttribute("numberOfLogins");
+    if (numberOfLogins != null) {
+        out.println("<h2> count = " + numberOfLogins + "</h2>");
     }
 %>
+
+<ul>
+    <li><a href="/users">Список всех юзеров</a></li>
+    <li><a href="#">Добавить юзера</a></li>
+    <li><a href="#">Список всех товаров</a></li>
+    <li><a href="#">Добавить новый товар</a></li>
+</ul>
+
 
 </body>
 </html>

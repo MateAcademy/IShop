@@ -1,7 +1,6 @@
 package ua.ishop.klunniy.factory;
 
 import org.apache.log4j.Logger;
-import ua.ishop.klunniy.controller.UserLoginServlet;
 import ua.ishop.klunniy.dao.UserDao;
 import ua.ishop.klunniy.dao.impl.UserDaoImpl;
 import ua.ishop.klunniy.dao.impl.UserDaoPostgresImpl;
@@ -19,7 +18,7 @@ public class UserDaoFactory {
 
     public static synchronized UserDao getUserDao() {
         if (instance == null) {
-            instance = new UserDaoImpl();
+            instance = new UserDaoPostgresImpl();
         }
         return instance;
     }

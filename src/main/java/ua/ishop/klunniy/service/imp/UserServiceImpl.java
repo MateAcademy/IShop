@@ -1,11 +1,7 @@
 package ua.ishop.klunniy.service.imp;
 
-
 import org.apache.log4j.Logger;
-import ua.ishop.klunniy.controller.UserLoginServlet;
 import ua.ishop.klunniy.dao.UserDao;
-import ua.ishop.klunniy.dao.impl.UserDaoImpl;
-import ua.ishop.klunniy.dao.impl.UserDaoPostgresImpl;
 import ua.ishop.klunniy.factory.UserDaoFactory;
 import ua.ishop.klunniy.model.User;
 import ua.ishop.klunniy.service.UserService;
@@ -34,5 +30,4 @@ public class UserServiceImpl implements UserService {
         return userDao.getUserByEmail(email);
     }
 
-    ;
 }

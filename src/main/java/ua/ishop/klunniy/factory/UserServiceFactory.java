@@ -1,7 +1,6 @@
 package ua.ishop.klunniy.factory;
 
 import org.apache.log4j.Logger;
-import ua.ishop.klunniy.controller.UserLoginServlet;
 import ua.ishop.klunniy.service.UserService;
 import ua.ishop.klunniy.service.imp.UserServiceImpl;
 

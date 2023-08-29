@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IShop</title>
+    <link rel="stylesheet" href="frontend/styles/style.css">
     <meta name="description" content="Лучшая выпечка в городе">
 </head>
 <body bgcolor="#ffe4c4">
 
 <center>
-    <div style="color: red">
+    <div style="color: red" class="title">
     <% String error = (String) request.getAttribute("error");
         if (error != null) {
             out.println(error);
@@ -22,13 +23,13 @@
     <br/>
     <form action="/login" method="post">
         <label for="email">Enter email: </label>
-        <input type="email" id="email" name="email" value="*****">
+        <input type="email" id="email" name="email" value="*******"/>
         <br/>
 
         <label for="password">Enter password: </label>
-        <input type="password" id="password" name="password" value="*****">
+        <input type="password" id="password" name="password" value="*******"/>
         <br/>
-        <input type="submit" value="Enter!">
+        <input type="submit" value="Enter!"/>
     </form>
 </center>
 

@@ -1,7 +1,6 @@
 package ua.ishop.klunniy.db;
 
 import org.apache.log4j.Logger;
-import ua.ishop.klunniy.controller.UserLoginServlet;
 import ua.ishop.klunniy.model.User;
 
 import java.util.ArrayList;

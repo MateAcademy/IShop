@@ -1,6 +1,4 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
@@ -10,11 +8,18 @@
     <servlet-class>ua.ishop.klunniy.controller.UserRegistrationServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
-
   <servlet-mapping>
     <servlet-name>UserRegistrationServlet</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>UsersJsp</servlet-name>
+    <jsp-file>/users.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UsersJsp</servlet-name>
+    <url-pattern>/users-jsp</url-pattern>
+  </servlet-mapping>
 
 </web-app>

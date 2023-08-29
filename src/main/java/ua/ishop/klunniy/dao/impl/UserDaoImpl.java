@@ -1,7 +1,6 @@
 package ua.ishop.klunniy.dao.impl;
 
 import org.apache.log4j.Logger;
-import ua.ishop.klunniy.controller.UserLoginServlet;
 import ua.ishop.klunniy.dao.UserDao;
 import ua.ishop.klunniy.db.Storage;
 import ua.ishop.klunniy.model.User;

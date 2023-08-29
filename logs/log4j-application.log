@@ -1,0 +1,44 @@
+2023-08-23 13:16:13 ERROR LoginServlet:54 - try to login > 5 times sessionId = F0E76DA502D111748A7EE11326E1931D
+2023-08-23 13:16:21 ERROR LoginServlet:54 - try to login > 5 times sessionId = F0E76DA502D111748A7EE11326E1931D
+2023-08-23 13:16:56 ERROR LoginServlet:54 - try to login > 5 times sessionId = F0E76DA502D111748A7EE11326E1931D
+2023-08-23 13:17:48 ERROR LoginServlet:54 - try to login > 5 times sessionId = F0E76DA502D111748A7EE11326E1931D
+2023-08-23 13:19:11 ERROR LoginServlet:52 - try to login > 5 times sessionId = 1953F3DDA358454024D48693F2B48B03
+2023-08-23 13:19:12 ERROR LoginServlet:52 - try to login > 5 times sessionId = 1953F3DDA358454024D48693F2B48B03
+2023-08-23 13:19:18 ERROR LoginServlet:52 - try to login > 5 times sessionId = 1953F3DDA358454024D48693F2B48B03
+2023-08-23 13:19:35 ERROR LoginServlet:52 - try to login > 5 times sessionId = 1953F3DDA358454024D48693F2B48B03
+2023-08-23 15:22:14 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@3049dc4f
+2023-08-23 15:22:25 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@660f262a
+2023-08-23 15:22:26 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@34a5a276
+2023-08-23 15:22:28 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@5e5fef8a
+2023-08-23 15:22:29 ERROR LoginServlet:53 - try to login > 5 times sessionId = 243A163DBB1F94EEE8476DD2D4D5FF75
+2023-08-23 15:24:24 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@1d28e270
+2023-08-23 15:33:22 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@33e19e5a
+2023-08-23 15:34:06 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@7cc83cfc
+2023-08-23 15:34:12 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@2c836b9e
+2023-08-23 15:34:46 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@7885001d
+2023-08-30 00:08:24 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@76792d69
+2023-08-30 00:08:25 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 00:08:28 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@79b32006
+2023-08-30 00:08:28 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 00:15:10 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@f3e79f2
+2023-08-30 00:15:10 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 00:16:46 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@f3e79f2
+2023-08-30 00:16:46 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 00:17:58 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@1450887a
+2023-08-30 00:17:58 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 00:26:42 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@1450887a
+2023-08-30 00:26:42 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 00:26:45 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@7489f138
+2023-08-30 00:30:57 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@75cb26f1
+2023-08-30 01:35:26 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@48e4c126
+2023-08-30 01:35:26 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 01:35:31 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@28f6d893
+2023-08-30 01:36:45 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@599672bc
+2023-08-30 01:36:45 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 01:36:48 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@59692852
+2023-08-30 01:37:55 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@4b799607
+2023-08-30 01:37:55 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 01:37:57 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@7cc83cfc
+2023-08-30 01:41:57 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@60af5945
+2023-08-30 01:41:57 INFO  LoginServlet:46 - password equals true, userID=1
+2023-08-30 01:42:00 DEBUG DbConnector:48 - connectionorg.postgresql.jdbc.PgConnection@2c836b9e
