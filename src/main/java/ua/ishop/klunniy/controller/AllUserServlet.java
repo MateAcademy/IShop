@@ -1,6 +1,7 @@
 package ua.ishop.klunniy.controller;
 
 import org.apache.log4j.Logger;
+import ua.ishop.klunniy.factory.UserServiceFactory;
 import ua.ishop.klunniy.model.User;
 import ua.ishop.klunniy.service.UserService;
 import ua.ishop.klunniy.service.imp.UserServiceImpl;
@@ -19,8 +20,8 @@ import java.util.List;
 @WebServlet("/users")
 public class AllUserServlet extends HttpServlet {
 
-    private static final UserService userService = new UserServiceImpl();
     private static final Logger logger = Logger.getLogger(AllUserServlet.class);
+    private static final UserService userService = UserServiceFactory.getUserService();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
