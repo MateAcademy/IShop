@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface UserDao {
 
-    void addUser(User user);
+    void save(User user);
     List<User> getUsers();
 
     User getUserByEmail(String email);

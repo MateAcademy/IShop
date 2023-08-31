@@ -18,9 +18,9 @@ import java.util.Objects;
  * @author Serhii Klunniy
  */
 @WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+public class UserLoginServlet extends HttpServlet {
 
-    private static final Logger logger = Logger.getLogger(LoginServlet.class);
+    private static final Logger logger = Logger.getLogger(UserLoginServlet.class);
 
     private static final UserService userService = UserServiceFactory.getUserService();
 
@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
             if (password.equals(passwordUserFromDB)) {
 //todo: что это означает?
                 // req.getRequestDispatcher("/main_admin_page.jsp").forward(req,resp);
-                logger.info("password equals true, userID=" + userFromDB.getId());
+                logger.info("password equals true, userID=" + userFromDB.getUserId());
                 getServletContext().getRequestDispatcher("/main_admin_page.jsp").forward(req, resp);
             } else {
                 logger.warn("password not equals true, user email=" + email);

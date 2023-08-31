@@ -34,25 +34,28 @@
 <%--     }--%>
 
 <%--%>--%>
-<table border="1">
-<c:forEach items="${allUsers}" var="element">
-    <tr>
-        <td><c:out value="${element.email}"/></td>
-        <td><c:out value="${element.password}"/></td>
-    </tr>
-</c:forEach>
-</table>
-
 
 
 <%--<table border="1">--%>
-<%--    <c:forEach items="${allUsers}" var="element">--%>
-<%--        <tr>--%>
-<%--            <td>${element.email}</td>--%>
-<%--            <td>${element.password}</td>--%>
-<%--        </tr>--%>
-<%--    </c:forEach>--%>
+<%--<c:forEach items="${allUsers}" var="element">--%>
+<%--    <tr>--%>
+<%--        <td><c:out value="${element.id}"/></td>--%>
+<%--        <td><c:out value="${element.email}"/></td>--%>
+<%--        <td><c:out value="${element.password}"/></td>--%>
+<%--    </tr>--%>
+<%--</c:forEach>--%>
 <%--</table>--%>
+
+
+<table border="1">
+    <c:forEach items="${allUsers}" var="element">
+        <tr>
+            <td>${element.userId}</td>
+            <td>${element.email}</td>
+            <td>${element.password}</td>
+        </tr>
+    </c:forEach>
+</table>
 
     </body>
     </html>
