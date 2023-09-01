@@ -11,13 +11,14 @@
 <body bgcolor="#ffe4c4">
 
 <center>
-    <div style="color: red" class="title">
+    <div class="title1"> </div>
+    <div class="title2"> </div>
     <% String error = (String) request.getAttribute("error");
         if (error != null) {
             out.println(error);
         }
     %>
-    </div>
+
 
     <h2> Enter your login and password!</h2>
     <br/>

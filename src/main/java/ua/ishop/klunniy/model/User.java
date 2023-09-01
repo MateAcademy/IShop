@@ -1,9 +1,12 @@
 package ua.ishop.klunniy.model;
 
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 /**
@@ -12,36 +15,25 @@ import java.util.Objects;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class User {
 
-    private Long userId;
-    private String email;
-    private String password;
+    Long userId;
+    String email;
+    String password;
+    String passwordNotEncoded;
+    LocalDateTime createDate;
+    LocalDateTime updateDate;
 
-    public User(String email, String password) {
+    public User(String email, String passwordNotEncoded) {
         this.email = email;
-        this.password = password;
+        this.passwordNotEncoded = passwordNotEncoded;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return Objects.equals(email, user.email) && Objects.equals(password, user.password);
+    public User(Long userId, String email, String passwordNotEncoded) {
+        this.userId = userId;
+        this.email = email;
+        this.passwordNotEncoded = passwordNotEncoded;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(email, password);
-    }
-
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
 }

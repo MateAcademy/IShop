@@ -9,9 +9,9 @@ import java.sql.SQLException;
 public class DbConnector {
     private static final Logger logger = Logger.getLogger(DbConnector.class);
 
-    private static final String DbURL = "jdbc:postgresql://localhost:5432/ishop";
+    private static final String DbURL = "jdbc:postgresql://localhost:5432/iShop";
     private static final String LOGIN = "postgres";
-    private static final String PASSWORD = "test";
+    private static final String PASSWORD = "postgres";
 
 
     private static DbConnector instance;

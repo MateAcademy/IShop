@@ -26,6 +26,13 @@ public class AllUserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<User> allUsers = userService.getUsers();
         req.setAttribute("allUsers", allUsers);
-        req.getRequestDispatcher("users.jsp").forward(req, resp);
+        req.getRequestDispatcher("/users.jsp").forward(req, resp);
     }
+
+//    @Override
+//    protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        List<User> allUsers = userService.getUsers();
+//        req.setAttribute("allUsers", allUsers);
+//        req.getRequestDispatcher("/users.jsp").forward(req, resp);
+//    }
 }

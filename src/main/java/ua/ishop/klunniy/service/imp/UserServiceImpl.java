@@ -15,7 +15,6 @@ public class UserServiceImpl implements UserService {
     private static final Logger logger = Logger.getLogger(UserServiceImpl.class);
     private static final UserDao userDao = UserDaoFactory.getUserDao();
 
-
     @Override
     public void addUser(User user) {
         userDao.save(user);
@@ -30,4 +29,18 @@ public class UserServiceImpl implements UserService {
         return userDao.getUserByEmail(email);
     }
 
+    @Override
+    public User getUserById(long id) {
+        return userDao.getUserById(id);
+    }
+
+    @Override
+    public void updateUser(User user) {
+        userDao.updateUser(user);
+    }
+
+    @Override
+    public void deleteUserById(long id) {
+        userDao.deleteUserById(id);
+    }
 }

@@ -22,11 +22,25 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    public void deleteUserById(long id) {
+
+    }
+
+    @Override
     public List<User> getUsers() {
         return Storage.getUsers();
     }
 
     public User getUserByEmail(String email) {
         return Storage.getUserByEmail(email);
-    };
+    }
+
+    @Override
+    public User getUserById(long id) {
+        return null;
+    }
+
+    @Override
+    public void updateUser(User user) {
+    }
 }
