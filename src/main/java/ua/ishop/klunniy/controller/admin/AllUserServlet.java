@@ -1,4 +1,4 @@
-package ua.ishop.klunniy.controller;
+package ua.ishop.klunniy.controller.admin;
 
 import org.apache.log4j.Logger;
 import ua.ishop.klunniy.factory.UserServiceFactory;
@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * @author Serhii Klunniy
  */
-@WebServlet("/users")
+@WebServlet("/admin/users")
 public class AllUserServlet extends HttpServlet {
 
     private static final Logger logger = Logger.getLogger(AllUserServlet.class);

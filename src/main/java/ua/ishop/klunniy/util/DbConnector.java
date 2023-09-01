@@ -1,42 +1,21 @@
 package ua.ishop.klunniy.util;
 
+import lombok.AccessLevel;
+import lombok.experimental.FieldDefaults;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class DbConnector {
-    private static final Logger logger = Logger.getLogger(DbConnector.class);
-
-    private static final String DbURL = "jdbc:postgresql://localhost:5432/iShop";
-    private static final String LOGIN = "postgres";
-    private static final String PASSWORD = "postgres";
-
+    static final Logger logger = Logger.getLogger(DbConnector.class);
+    static final String DbURL = "jdbc:postgresql://localhost:5432/iShop";
+    static final String LOGIN = "postgres";
+    static final String PASSWORD = "test";
 
     private static DbConnector instance;
-
-
-//    public static void getInstance(String DbURL, String LOGIN, String PASSWORD) {
-//        if (instance == null) {
-//            instance = new DbConnector(DbURL, LOGIN, PASSWORD);
-//        }
-//        return instance;
-//    }
-//    private DbConnector(String DbURL, String LOGIN, String PASSWORD) {
-//        this.DbURL = DbURL;
-//        this.LOGIN = LOGIN;
-//        this.PASSWORD = PASSWORD;
-//    };
-
-
-//    public static DbConnector getInstance() throws Exception {
-//        if (instance == null) {
-//            throw new Exception("DbConnector instance == null");
-//        }
-//        return instance;
-//    }
-
 
     public static Connection getConnection() {
         try {

@@ -5,7 +5,7 @@
 
   <servlet>
     <servlet-name>UserRegistrationServlet</servlet-name>
-    <servlet-class>ua.ishop.klunniy.controller.UserRegistrationServlet</servlet-class>
+    <servlet-class>ua.ishop.klunniy.controller.user.UserRegistrationServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>

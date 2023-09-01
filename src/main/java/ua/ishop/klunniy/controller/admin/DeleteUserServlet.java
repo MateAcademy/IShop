@@ -1,4 +1,4 @@
-package ua.ishop.klunniy.controller;
+package ua.ishop.klunniy.controller.admin;
 
 import org.apache.log4j.Logger;
 import ua.ishop.klunniy.factory.UserServiceFactory;
@@ -20,6 +20,6 @@ public class DeleteUserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         long id = Long.parseLong(req.getParameter("userId"));
         userService.deleteUserById(id);
-        resp.sendRedirect("/users");
+        resp.sendRedirect("/admin/users");
     }
 }

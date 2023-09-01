@@ -1,4 +1,4 @@
-package ua.ishop.klunniy.controller;
+package ua.ishop.klunniy.controller.user;
 
 import org.apache.log4j.Logger;
 import ua.ishop.klunniy.factory.UserServiceFactory;

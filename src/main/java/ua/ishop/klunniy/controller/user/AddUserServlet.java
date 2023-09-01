@@ -1,4 +1,4 @@
-package ua.ishop.klunniy.controller;
+package ua.ishop.klunniy.controller.user;
 
 import org.apache.log4j.Logger;
 import ua.ishop.klunniy.factory.UserServiceFactory;
@@ -33,7 +33,7 @@ public class AddUserServlet extends HttpServlet {
 
         User user = new User(email, password);
         userService.addUser(user);
-        resp.sendRedirect("/users");
+        resp.sendRedirect("/admin/users");
         //req.getRequestDispatcher("/users").forward(req, resp);
     }
 }

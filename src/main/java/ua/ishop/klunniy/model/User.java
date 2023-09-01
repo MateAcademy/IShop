@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -24,6 +25,7 @@ public class User {
     String passwordNotEncoded;
     LocalDateTime createDate;
     LocalDateTime updateDate;
+    List<Role> roleList;
 
     public User(String email, String passwordNotEncoded) {
         this.email = email;
@@ -36,4 +38,12 @@ public class User {
         this.passwordNotEncoded = passwordNotEncoded;
     }
 
+    public User(Long userId, String email, String password, String passwordNotEncoded, LocalDateTime createDate, LocalDateTime updateDate) {
+        this.userId = userId;
+        this.email = email;
+        this.password = password;
+        this.passwordNotEncoded = passwordNotEncoded;
+        this.createDate = createDate;
+        this.updateDate = updateDate;
+    }
 }

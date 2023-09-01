@@ -1,11 +1,10 @@
 
 .title1 {
-
     background: blue;
     margin: 15px;
     padding: 15px;
     border: 2px solid black;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 .title2 {
