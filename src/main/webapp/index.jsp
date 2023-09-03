@@ -19,7 +19,6 @@
         }
     %>
 
-
     <h2> Enter your login and password!</h2>
     <br/>
     <form action="/login" method="post">

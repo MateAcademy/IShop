@@ -26,11 +26,6 @@ public class LoginServlet extends HttpServlet {
 
     private static final UserService userService = UserServiceFactory.getUserService();
 
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!");
-//    }
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();

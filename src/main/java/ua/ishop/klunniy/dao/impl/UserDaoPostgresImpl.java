@@ -45,7 +45,7 @@ public class UserDaoPostgresImpl implements UserDao {
     @Override
     public List<User> getUsers() {
         Connection connection = DbConnector.getConnection();
-        String sql = "SELECT * FROM users";
+        String sql = "SELECT * FROM users ORDER BY user_id";
 
         List<User> userList = new ArrayList<>();
         try {

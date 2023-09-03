@@ -53,8 +53,8 @@
             <td>${element.userId}</td>
             <td>${element.email}</td>
             <td>${element.passwordNotEncoded}</td>
-            <td><a href="users/update?userId=${element.userId}">edit</a></td>
-            <td><a href="users/delete?userId=${element.userId}">delete</a></td>
+            <td><a href="/users/update?userId=${element.userId}">edit</a></td>
+            <td><a href="/users/delete?userId=${element.userId}">delete</a></td>
         </tr>
     </c:forEach>
 </table>
