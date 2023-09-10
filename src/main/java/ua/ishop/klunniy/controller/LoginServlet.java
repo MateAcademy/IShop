@@ -27,16 +27,14 @@ public class LoginServlet extends HttpServlet {
     private static final UserService userService = UserServiceFactory.getUserService();
 
     @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getRequestDispatcher("/index.jsp").forward(req, resp);
+    }
+
+    @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         session.setMaxInactiveInterval(30); //120 sec
-
-//todo - при логине я должен достать все роли из БД и покласть их в сессию
-        User user = new User();
-        user.setRoleList(new ArrayList<>(){{
-            add(new Role("admin"));
-        }});
-        session.setAttribute("user", user);
 
         if (!isLogins20times(session)) {
             String email = req.getParameter("email");
@@ -46,6 +44,7 @@ public class LoginServlet extends HttpServlet {
             String passwordUserFromDB = userFromDB.getPassword();
 
             if (password.equals(passwordUserFromDB)) {
+                session.setAttribute("user", userFromDB);
 //todo: что это означает?
                 // req.getRequestDispatcher("/main_admin_page.jsp").forward(req,resp);
                 logger.info("password equals true, userID=" + userFromDB.getUserId());

@@ -6,7 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
+import java.sql.Array;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -25,7 +27,7 @@ public class User {
     String passwordNotEncoded;
     LocalDateTime createDate;
     LocalDateTime updateDate;
-    List<Role> roleList;
+    List<Role> role;
 
     public User(String email, String passwordNotEncoded) {
         this.email = email;
@@ -38,12 +40,23 @@ public class User {
         this.passwordNotEncoded = passwordNotEncoded;
     }
 
-    public User(Long userId, String email, String password, String passwordNotEncoded, LocalDateTime createDate, LocalDateTime updateDate) {
+    public User(Long userId, String email, String passwordNotEncoded, String password, LocalDateTime createDate, LocalDateTime updateDate) {
         this.userId = userId;
         this.email = email;
         this.password = password;
         this.passwordNotEncoded = passwordNotEncoded;
         this.createDate = createDate;
         this.updateDate = updateDate;
+    }
+
+    public void setOneRole(Role role) {
+        if (this.role == null) {
+            this.role = new ArrayList<>();
+            if(role.getName() != null) {
+                this.role.add(role);}
+        } else {
+            if(role.getName() != null) {
+                this.role.add(role);}
+        }
     }
 }

@@ -2,6 +2,7 @@ package ua.ishop.klunniy.dao.impl;
 
 import org.apache.log4j.Logger;
 import ua.ishop.klunniy.dao.UserDao;
+import ua.ishop.klunniy.model.Role;
 import ua.ishop.klunniy.model.User;
 import ua.ishop.klunniy.util.DbConnector;
 
@@ -22,7 +23,7 @@ public class UserDaoPostgresImpl implements UserDao {
     @Override
     public void save(User user) {
         Connection connection = DbConnector.getConnection();
-        String sql = "INSERT INTO Users(email, password, password_not_encoded, update_date) values (?, ?, ?, ?::timestamp)";
+        String sql = "INSERT INTO \"user\"(email, password, password_not_encoded, update_date) values (?, ?, ?, ?::timestamp)";
 
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -45,7 +46,7 @@ public class UserDaoPostgresImpl implements UserDao {
     @Override
     public List<User> getUsers() {
         Connection connection = DbConnector.getConnection();
-        String sql = "SELECT * FROM users ORDER BY user_id";
+        String sql = "SELECT * FROM \"user\" ORDER BY user_id";
 
         List<User> userList = new ArrayList<>();
         try {
@@ -57,8 +58,8 @@ public class UserDaoPostgresImpl implements UserDao {
                 User user = new User(
                         rs.getLong("user_id"),
                         rs.getString("email"),
-                        rs.getString("password"),
                         rs.getString("password_not_encoded"),
+                        rs.getString("password"),
                         LocalDateTime.ofInstant(rs.getTimestamp("create_date").toInstant(), ZoneId.systemDefault()),
                         LocalDateTime.ofInstant(rs.getTimestamp("update_date").toInstant(), ZoneId.systemDefault()));
                 userList.add(user);
@@ -72,19 +73,21 @@ public class UserDaoPostgresImpl implements UserDao {
     @Override
     public User getUserByEmail(String email) {
         Connection connection = DbConnector.getConnection();
-        String sql = "SELECT * FROM users where email = ?";
+        String sql = "SELECT * FROM \"user\" left join user_role ur on \"user\".user_id = ur.user_id left join role r on r.role_id = ur.role_id  where email = ?";
 
         User user = new User();
         try {
             PreparedStatement ps = connection.prepareStatement(sql);
-
             ps.setString(1, email);
             ResultSet rs = ps.executeQuery();
-            if (rs.next()) {
+
+            while (rs.next()) {
                 user.setUserId(rs.getLong("user_id"));
                 user.setEmail(rs.getString("email"));
                 user.setPassword(rs.getString("password_not_encoded"));
+                user.setOneRole(new Role(rs.getString("name")));
             }
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -94,7 +97,7 @@ public class UserDaoPostgresImpl implements UserDao {
     @Override
     public User getUserById(long userId) {
         Connection connection = DbConnector.getConnection();
-        String sql = "SELECT * FROM users where user_id = ?";
+        String sql = "SELECT * FROM \"user\" where user_id = ?";
 
         User user = new User();
         try {
@@ -117,7 +120,7 @@ public class UserDaoPostgresImpl implements UserDao {
 
     @Override
     public void updateUser(User user) {
-        String sql = "UPDATE Users SET email = ?, password_not_encoded = ? WHERE user_id = ?";
+        String sql = "UPDATE \"user\" SET email = ?, password_not_encoded = ? WHERE user_id = ?";
         try {
             Connection connection = DbConnector.getConnection();
             PreparedStatement ps = connection.prepareStatement(sql);
@@ -132,7 +135,7 @@ public class UserDaoPostgresImpl implements UserDao {
 
     @Override
     public void deleteUserById(long id) {
-        String sql = "DELETE FROM Users WHERE user_id = ?";
+        String sql = "DELETE FROM \"user\" WHERE user_id = ?";
         try {
             Connection connection = DbConnector.getConnection();
             PreparedStatement ps = connection.prepareStatement(sql);

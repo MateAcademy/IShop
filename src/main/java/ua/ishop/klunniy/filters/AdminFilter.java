@@ -28,16 +28,15 @@ public class AdminFilter implements Filter {
 
         User userFromSession = (User) httpServletRequest.getSession().getAttribute("user");
         if (userFromSession != null) {
-            List<Role> listRole = userFromSession.getRoleList();
-            Role admin = listRole.stream().filter(role -> role.getName().equals("admin")).findFirst().orElse(null);
-            if (admin != null) {
-                chain.doFilter(request, response);
-            } else {
-                httpServletResponse.sendRedirect("/login");
+            List<Role> listRole = userFromSession.getRole();
+            if (listRole != null && !listRole.isEmpty()) {
+                Role admin = listRole.stream().filter(role -> role.getName().equals("admin")).findFirst().orElse(null);
+                if (admin != null) {
+                    chain.doFilter(request, response);
+                }
             }
-        } else {
-            httpServletResponse.sendRedirect("/login");
         }
+        httpServletResponse.sendRedirect("/login");
     }
 
     @Override

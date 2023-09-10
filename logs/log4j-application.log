@@ -206,3 +206,132 @@
 2023-09-03 12:20:00 WARN  LoginServlet:54 - password not equals true, user email=s.klunniy@gmail.com
 2023-09-03 12:20:09 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2fdc2522
 2023-09-03 12:20:09 WARN  LoginServlet:54 - password not equals true, user email=s.klunniy@gmail.com
+2023-09-10 18:55:09 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2161a090
+2023-09-10 18:55:10 WARN  LoginServlet:54 - password not equals true, user email=s.klunniy@gmail.com
+2023-09-10 18:55:30 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@6bb32e90
+2023-09-10 18:55:30 WARN  LoginServlet:54 - password not equals true, user email=s.klunniy@gmail.com
+2023-09-10 18:56:29 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@6effe453
+2023-09-10 18:56:29 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:56:35 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@5916bf
+2023-09-10 18:56:41 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@6574cd96
+2023-09-10 18:56:47 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@740a3250
+2023-09-10 18:56:47 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@28690a74
+2023-09-10 18:56:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@45dfb2e2
+2023-09-10 18:56:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2fc26e30
+2023-09-10 18:57:17 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@503a557e
+2023-09-10 18:57:17 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@5c07864e
+2023-09-10 18:57:40 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@433f7062
+2023-09-10 18:57:40 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:41 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@413d9910
+2023-09-10 18:57:41 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:42 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7e311f58
+2023-09-10 18:57:42 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:44 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7863d350
+2023-09-10 18:57:44 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:45 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@a254e12
+2023-09-10 18:57:45 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:47 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@724bba29
+2023-09-10 18:57:47 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:47 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@34a5a276
+2023-09-10 18:57:47 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:48 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@44ea656e
+2023-09-10 18:57:48 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:49 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@51e6a796
+2023-09-10 18:57:49 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:50 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@346c019d
+2023-09-10 18:57:50 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@70f6feee
+2023-09-10 18:57:51 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:52 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@8157b8d
+2023-09-10 18:57:52 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:53 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@4d4fc4a8
+2023-09-10 18:57:53 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:53 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@ad52cfa
+2023-09-10 18:57:53 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 18:57:57 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@3a624a92
+2023-09-10 18:57:57 INFO  LoginServlet:51 - password equals true, userID=1
+2023-09-10 20:33:59 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@3391dc82
+2023-09-10 20:35:22 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@1439e07d
+2023-09-10 20:41:50 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@c6192ba
+2023-09-10 20:43:52 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 20:45:15 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2a4869b7
+2023-09-10 20:45:31 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 21:59:09 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@5dfa58c2
+2023-09-10 21:59:09 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:00:47 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@60af5945
+2023-09-10 22:00:47 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:00:49 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2244807e
+2023-09-10 22:02:30 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@58c3e180
+2023-09-10 22:02:30 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:02:32 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@26daefe8
+2023-09-10 22:04:17 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@c6192ba
+2023-09-10 22:04:29 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:08:02 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@c3c25a7
+2023-09-10 22:08:13 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:08:42 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7613e50a
+2023-09-10 22:12:05 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@41876ba6
+2023-09-10 22:12:10 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:12:31 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@44b6c9c
+2023-09-10 22:12:46 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@452dbe9a
+2023-09-10 22:15:04 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@f28c66f
+2023-09-10 22:15:08 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:15:08 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7887b92c
+2023-09-10 22:15:08 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:15:38 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@6dd943db
+2023-09-10 22:15:38 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:15:40 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@70eaa7c2
+2023-09-10 22:15:45 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@28f6d893
+2023-09-10 22:15:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@5c534bf0
+2023-09-10 22:15:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7e719a48
+2023-09-10 22:16:05 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2c836b9e
+2023-09-10 22:16:05 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7fee7fc5
+2023-09-10 22:16:10 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@37a87eea
+2023-09-10 22:16:10 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@273e0da2
+2023-09-10 22:17:30 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@5dfa58c2
+2023-09-10 22:17:30 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:17:32 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7774d140
+2023-09-10 22:17:35 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@273e0da2
+2023-09-10 22:17:35 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@f967e3c
+2023-09-10 22:18:06 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@56949c06
+2023-09-10 22:18:06 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@619f0ed4
+2023-09-10 22:18:10 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2cdf345
+2023-09-10 22:18:17 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@3f40aea9
+2023-09-10 22:18:17 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7fae4d1b
+2023-09-10 22:18:20 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@75225a15
+2023-09-10 22:18:26 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@139618b0
+2023-09-10 22:18:26 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@25346e08
+2023-09-10 22:18:59 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7cc83cfc
+2023-09-10 22:18:59 WARN  LoginServlet:57 - password not equals true, user email=ava@gmail.com
+2023-09-10 22:19:17 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7e2d5677
+2023-09-10 22:19:17 WARN  LoginServlet:57 - password not equals true, user email=ava@gmail.com
+2023-09-10 22:20:31 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@48e4c126
+2023-09-10 22:20:31 WARN  LoginServlet:57 - password not equals true, user email=ava@gmail.com
+2023-09-10 22:29:10 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@4b799607
+2023-09-10 22:29:10 WARN  LoginServlet:57 - password not equals true, user email=ava@gmail.com
+2023-09-10 22:30:29 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@5e2388a2
+2023-09-10 22:34:07 WARN  LoginServlet:57 - password not equals true, user email=ava@gmail.com
+2023-09-10 22:34:47 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@47ed6ce7
+2023-09-10 22:34:47 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:35:14 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@60af5945
+2023-09-10 22:35:14 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:35:16 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2244807e
+2023-09-10 22:35:31 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@218e69bc
+2023-09-10 22:35:31 INFO  LoginServlet:54 - password equals true, userID=3
+2023-09-10 22:38:31 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@4b799607
+2023-09-10 22:38:31 INFO  LoginServlet:54 - password equals true, userID=1
+2023-09-10 22:38:32 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@720fcd15
+2023-09-10 22:38:42 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@79b32006
+2023-09-10 22:38:42 INFO  LoginServlet:54 - password equals true, userID=3
+2023-09-10 22:40:11 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@751a6e3d
+2023-09-10 22:40:15 INFO  LoginServlet:54 - password equals true, userID=3
+2023-09-10 22:43:41 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@78529cd3
+2023-09-10 22:43:42 INFO  LoginServlet:54 - password equals true, userID=3
+2023-09-10 22:45:49 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@78529cd3
+2023-09-10 22:45:49 INFO  LoginServlet:59 - password equals true, userID=3
+2023-09-10 22:46:39 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@4b799607
+2023-09-10 22:46:39 INFO  LoginServlet:59 - password equals true, userID=1
+2023-09-10 22:46:43 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@720fcd15
+2023-09-10 22:46:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@5c6cf776
+2023-09-10 22:46:51 INFO  LoginServlet:59 - password equals true, userID=3
+2023-09-10 22:47:07 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@220eb3e3
+2023-09-10 22:47:07 INFO  LoginServlet:59 - password equals true, userID=3
