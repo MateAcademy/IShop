@@ -28,6 +28,7 @@ public class User {
     LocalDateTime createDate;
     LocalDateTime updateDate;
     List<Role> role;
+    Gender gender;
 
     public User(String email, String passwordNotEncoded) {
         this.email = email;
