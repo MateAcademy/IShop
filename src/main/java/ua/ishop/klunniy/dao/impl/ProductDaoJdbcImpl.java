@@ -1,7 +1,8 @@
 package ua.ishop.klunniy.dao.impl;
 
 import org.apache.log4j.Logger;
-import ua.ishop.klunniy.dao.UserDao;
+import ua.ishop.klunniy.dao.ProductDao;
+import ua.ishop.klunniy.model.Product;
 import ua.ishop.klunniy.model.Role;
 import ua.ishop.klunniy.model.User;
 import ua.ishop.klunniy.util.DbConnector;
@@ -16,26 +17,18 @@ import java.util.List;
 /**
  * @author Serhii Klunniy
  */
-public class UserDaoPostgresImpl implements UserDao {
-
-    private static final Logger logger = Logger.getLogger(UserDaoPostgresImpl.class);
+public class ProductDaoJdbcImpl implements ProductDao {
+    private static final Logger logger = Logger.getLogger(UserDaoJdbcImpl.class);
 
     @Override
-    public void save(User user) {
+    public void save(Product product) {
         Connection connection = DbConnector.getConnection();
-        String sql = "INSERT INTO \"user\"(email, password, password_not_encoded, update_date) values (?, ?, ?, ?::timestamp)";
-
-        LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        String formatDateTime = now.format(format);
-
+        String sql = "INSERT INTO \"product\"(name, price, description) values (?, ?, ?)";
         try {
-            assert connection != null;
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1, user.getEmail());
-            ps.setString(2, "123");
-            ps.setString(3, user.getPasswordNotEncoded());
-            ps.setString(4, formatDateTime);
+            ps.setString(1, product.getName());
+            ps.setDouble(2, product.getPrice());
+            ps.setString(3, product.getDescription());
 
             ps.executeUpdate();
         } catch (SQLException ex) {
@@ -44,30 +37,28 @@ public class UserDaoPostgresImpl implements UserDao {
     }
 
     @Override
-    public List<User> getUsers() {
+    public List<Product> getProducts() {
         Connection connection = DbConnector.getConnection();
-        String sql = "SELECT * FROM \"user\" ORDER BY user_id";
+        String sql = "SELECT * FROM \"product\" ORDER BY product_id";
 
-        List<User> userList = new ArrayList<>();
+        List<Product> productList = new ArrayList<>();
         try {
             assert connection != null;
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(sql);
 
             while (rs.next()) {
-                User user = new User(
-                        rs.getLong("user_id"),
-                        rs.getString("email"),
-                        rs.getString("password_not_encoded"),
-                        rs.getString("password"),
-                        LocalDateTime.ofInstant(rs.getTimestamp("create_date").toInstant(), ZoneId.systemDefault()),
-                        LocalDateTime.ofInstant(rs.getTimestamp("update_date").toInstant(), ZoneId.systemDefault()));
-                userList.add(user);
+                Product product = new Product(
+                        rs.getLong("product_id"),
+                        rs.getString("name"),
+                        rs.getDouble("price"),
+                        rs.getString("description"));
+                productList.add(product);
             }
         } catch (SQLException ex) {
             throw new RuntimeException(ex);
         }
-        return userList;
+        return productList;
     }
 
     @Override
@@ -142,7 +133,6 @@ public class UserDaoPostgresImpl implements UserDao {
             ps.setLong(1, id);
             ps.executeUpdate();
         } catch (SQLException sqlException) {
-
         }
     }
 }

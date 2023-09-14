@@ -19,7 +19,7 @@
 <ul>
     <li><a href="/admin/users">Список всех юзеров</a></li>
     <li><a href="/users/add">Добавить юзера</a></li>
-    <li><a href="#">Список всех товаров</a></li>
+    <li><a href="/product">Список всех товаров</a></li>
     <li><a href="#">Добавить новый товар</a></li>
 </ul>
 

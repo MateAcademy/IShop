@@ -59,5 +59,5 @@
     </c:forEach>
 </table>
 
-    </body>
-    </html>
+</body>
+</html>

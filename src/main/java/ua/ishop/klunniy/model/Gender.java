@@ -5,4 +5,5 @@ package ua.ishop.klunniy.model;
  */
 public enum Gender {
     MALE, FEMALE
+
 }

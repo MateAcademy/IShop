@@ -2,8 +2,7 @@ package ua.ishop.klunniy.factory;
 
 import org.apache.log4j.Logger;
 import ua.ishop.klunniy.dao.UserDao;
-import ua.ishop.klunniy.dao.impl.UserDaoImpl;
-import ua.ishop.klunniy.dao.impl.UserDaoPostgresImpl;
+import ua.ishop.klunniy.dao.impl.UserDaoJdbcImpl;
 
 /**
  * @author Serhii Klunniy
@@ -18,7 +17,7 @@ public class UserDaoFactory {
 
     public static synchronized UserDao getUserDao() {
         if (instance == null) {
-            instance = new UserDaoPostgresImpl();
+            instance = new UserDaoJdbcImpl();
         }
         return instance;
     }

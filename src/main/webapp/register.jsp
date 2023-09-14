@@ -15,8 +15,6 @@
 <center>
     <p>
 
-
-
     <center>
         <%
             String error = (String) request.getAttribute("error");
