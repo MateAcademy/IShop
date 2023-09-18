@@ -108,14 +108,14 @@ public class ProductDaoJdbcImpl implements ProductDao {
     }
 
     @Override
-    public void updateUser(User user) {
-        String sql = "UPDATE \"user\" SET email = ?, password_not_encoded = ? WHERE user_id = ?";
+    public void updateProduct(Product product) {
+        String sql = "UPDATE \"product\" SET name = ?, price = ?, price = ? WHERE product_id = ?";
         try {
             Connection connection = DbConnector.getConnection();
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1, user.getEmail());
-            ps.setString(2, user.getPasswordNotEncoded());
-            ps.setLong(3, user.getUserId());
+            ps.setString(1, product.getName());
+            ps.setDouble(2, product.getPrice());
+            ps.setString(3, product.getDescription());
             ps.executeUpdate();
         } catch (SQLException sqlException) {
 
@@ -123,12 +123,12 @@ public class ProductDaoJdbcImpl implements ProductDao {
     }
 
     @Override
-    public void deleteUserById(long id) {
-        String sql = "DELETE FROM \"user\" WHERE user_id = ?";
+    public void deleteProductById(long productId) {
+        String sql = "DELETE FROM \"product\" WHERE product_id = ?";
         try {
             Connection connection = DbConnector.getConnection();
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setLong(1, id);
+            ps.setLong(1, productId);
             ps.executeUpdate();
         } catch (SQLException sqlException) {
         }
