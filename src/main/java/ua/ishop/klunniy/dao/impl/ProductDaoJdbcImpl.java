@@ -62,51 +62,49 @@ public class ProductDaoJdbcImpl implements ProductDao {
     }
 
     @Override
-    public User getUserByEmail(String email) {
+    public Product findProductByName(String name) {
         Connection connection = DbConnector.getConnection();
-        String sql = "SELECT * FROM \"user\" left join user_role ur on \"user\".user_id = ur.user_id left join role r on r.role_id = ur.role_id  where email = ?";
+        String sql = "SELECT * FROM \"product\"  where name = ?";
 
-        User user = new User();
+        Product product = new Product();
         try {
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1, email);
+            ps.setString(1, name);
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
-                user.setUserId(rs.getLong("user_id"));
-                user.setEmail(rs.getString("email"));
-                user.setPassword(rs.getString("password_not_encoded"));
-                user.setOneRole(new Role(rs.getString("name")));
+                product.setProductId(rs.getLong("product_id"));
+                product.setName(rs.getString("name"));
+                product.setPrice(rs.getDouble("price"));
+                product.setDescription(rs.getString("description"));
             }
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return user;
+        return product;
     }
 
     @Override
-    public User getUserById(long userId) {
+    public Product getProductById(long productId) {
         Connection connection = DbConnector.getConnection();
-        String sql = "SELECT * FROM \"user\" where user_id = ?";
+        String sql = "SELECT * FROM \"product\" where product_id = ?";
 
-        User user = new User();
+        Product product = new Product();
         try {
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setLong(1, userId);
+            ps.setLong(1, productId);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
-                user.setUserId(rs.getLong("user_id"));
-                user.setEmail(rs.getString("email"));
-                user.setPassword(rs.getString("password"));
-                user.setCreateDate(LocalDateTime.ofInstant(rs.getTimestamp("create_date").toInstant(), ZoneId.systemDefault()));
-                user.setUpdateDate(LocalDateTime.ofInstant(rs.getTimestamp("update_date").toInstant(), ZoneId.systemDefault()));
-                user.setPasswordNotEncoded(rs.getString("password_not_encoded"));
+                product.setProductId(rs.getLong("product_id"));
+                product.setName(rs.getString("name"));
+                product.setPrice(rs.getDouble("price"));
+                product.setDescription(rs.getString("description"));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return user;
+        return product;
     }
 
     @Override

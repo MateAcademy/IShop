@@ -23,7 +23,7 @@ public class AllProductServlet extends HttpServlet {
 
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-            req.setAttribute("allUsers", userService.getUsers());
+           // req.setAttribute("allUsers", userService.getUsers());
             req.getRequestDispatcher("/users.jsp").forward(req, resp);
         }
 
