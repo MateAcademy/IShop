@@ -30,6 +30,9 @@ public class User {
     List<Role> role;
     Gender gender;
 
+    List<Product> products;
+
+
     public User(String email, String passwordNotEncoded) {
         this.email = email;
         this.passwordNotEncoded = passwordNotEncoded;

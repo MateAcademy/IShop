@@ -20,4 +20,6 @@ public class Product {
     double price;
     String description;
 
+    User user
+
 }

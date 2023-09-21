@@ -109,7 +109,7 @@ public class ProductDaoJdbcImpl implements ProductDao {
 
     @Override
     public void updateProduct(Product product) {
-        String sql = "UPDATE \"product\" SET name = ?, price = ?, price = ? WHERE product_id = ?";
+        String sql = "UPDATE \"product\" SET name = ?, price = ?, description = ? WHERE product_id = ?";
         try {
             Connection connection = DbConnector.getConnection();
             PreparedStatement ps = connection.prepareStatement(sql);
