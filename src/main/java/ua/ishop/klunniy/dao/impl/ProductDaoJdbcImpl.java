@@ -116,9 +116,10 @@ public class ProductDaoJdbcImpl implements ProductDao {
             ps.setString(1, product.getName());
             ps.setDouble(2, product.getPrice());
             ps.setString(3, product.getDescription());
+            ps.setLong(4, product.getProductId());
             ps.executeUpdate();
         } catch (SQLException sqlException) {
-
+            System.out.println(sqlException);
         }
     }
 

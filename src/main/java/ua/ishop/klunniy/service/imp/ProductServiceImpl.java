@@ -35,13 +35,13 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public User getProductById(long id) {
-        return null;
+    public Product getProductById(long id) {
+        return productDao.getProductById(id);
     }
 
     @Override
     public void updateProduct(Product product) {
-
+        productDao.updateProduct(product);
     }
 
     @Override

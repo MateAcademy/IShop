@@ -15,7 +15,7 @@
       <td>${element.productId}</td>
       <td>${element.name}</td>
       <td>${element.description}</td>
-      <td><a href="#">edit</a></td>
+      <td><a href="/products/update?productId=${element.productId}">edit</a></td>
       <td><a href="#">delete</a></td>
     </tr>
   </c:forEach>

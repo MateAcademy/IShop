@@ -45,11 +45,12 @@ public class UserDaoJdbcImpl implements UserDao {
 
     @Override
     public List<User> getUsers() {
-        Connection connection = DbConnector.getConnection();
+
         String sql = "SELECT * FROM \"user\" ORDER BY user_id";
 
         List<User> userList = new ArrayList<>();
-        try {
+
+        try (Connection connection = DbConnector.getConnection()) {
             assert connection != null;
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(sql);
@@ -67,19 +68,23 @@ public class UserDaoJdbcImpl implements UserDao {
         } catch (SQLException ex) {
             throw new RuntimeException(ex);
         }
+
         return userList;
     }
 
     @Override
     public User getUserByEmail(String email) {
         Connection connection = DbConnector.getConnection();
-        String sql = "SELECT * FROM \"user\" left join user_role ur on \"user\".user_id = ur.user_id left join role r on r.role_id = ur.role_id  where email = ?";
+        String sql = "SELECT * FROM 'users' WHERE email =" + email;
+
+       // String sql = "SELECT * FROM \"user\" left join user_role ur on \"user\".user_id = ur.user_id left join role r on r.role_id = ur.role_id  where email = ?";
 
         User user = new User();
         try {
-            PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1, email);
-            ResultSet rs = ps.executeQuery();
+            ResultSet rs = connection.createStatement().executeQuery(sql);
+            //PreparedStatement ps = connection.prepareStatement(sql);
+            //ps.setString(1, email);
+            //ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
                 user.setUserId(rs.getLong("user_id"));

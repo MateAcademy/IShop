@@ -356,3 +356,68 @@
 2023-09-18 21:07:35 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@aa74f3c
 2023-09-18 21:07:35 INFO  LoginServlet:50 - password equals true, userID=1
 2023-09-18 21:07:38 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@4aff23ce
+2023-09-25 19:48:04 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@176f71a7
+2023-09-25 19:48:04 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 19:48:08 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@41641c84
+2023-09-25 19:48:29 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@63d23c67
+2023-09-25 19:48:29 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@68cb163b
+2023-09-25 19:48:38 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@412ae288
+2023-09-25 19:50:40 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7bfbec90
+2023-09-25 19:50:40 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 19:50:43 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@720fcd15
+2023-09-25 19:50:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@56949c06
+2023-09-25 19:50:55 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@74d53d07
+2023-09-25 19:50:55 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 19:50:57 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@42670b9a
+2023-09-25 20:19:40 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@3508cbf2
+2023-09-25 20:19:40 INFO  AllProductServlet:36 - we get all productsnull
+2023-09-25 20:21:11 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7b7ebf3
+2023-09-25 20:21:11 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 20:21:14 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@44c81664
+2023-09-25 20:21:20 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@40eb605f
+2023-09-25 20:21:20 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:44:24 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@60df679d
+2023-09-25 20:44:24 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 20:44:25 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@79b32006
+2023-09-25 20:44:25 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 20:44:29 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7c472e7e
+2023-09-25 20:44:29 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:44:38 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2dc666d2
+2023-09-25 20:47:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@f3e79f2
+2023-09-25 20:47:52 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 20:47:56 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@504926de
+2023-09-25 20:47:56 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:48:01 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7e2d5677
+2023-09-25 20:48:19 ERROR UpdateProductServlet:49 -  ...... java.lang.NumberFormatException: For input string: "40000.0"
+2023-09-25 20:50:29 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@76792d69
+2023-09-25 20:50:29 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 20:50:32 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2e0ca08d
+2023-09-25 20:50:32 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:50:36 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@273e0da2
+2023-09-25 20:50:45 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@797e2151
+2023-09-25 20:50:45 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@3859123f
+2023-09-25 20:50:45 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:50:51 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@5c6cf776
+2023-09-25 20:50:58 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7e2d5677
+2023-09-25 20:50:58 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@28f6d893
+2023-09-25 20:50:58 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:56:05 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@51034c87
+2023-09-25 20:56:12 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 20:56:17 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@1efc5807
+2023-09-25 20:56:17 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:56:23 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@7887b92c
+2023-09-25 20:56:37 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@79f70d58
+2023-09-25 20:56:38 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@783c9557
+2023-09-25 20:56:38 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:57:01 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@299e92fe
+2023-09-25 20:57:40 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@4be5c3bf
+2023-09-25 20:58:26 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@ebb1b01
+2023-09-25 20:58:26 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:59:28 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@53ea14d0
+2023-09-25 20:59:28 INFO  LoginServlet:50 - password equals true, userID=1
+2023-09-25 20:59:33 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@2cd2f977
+2023-09-25 20:59:33 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)
+2023-09-25 20:59:38 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@79b32006
+2023-09-25 20:59:46 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@1fde9792
+2023-09-25 20:59:46 DEBUG DbConnector:27 - connectionorg.postgresql.jdbc.PgConnection@75cb26f1
+2023-09-25 20:59:46 INFO  AllProductServlet:36 - we get all productsUser(userId=1, email=s.klunniy@gmail.com, password=123, passwordNotEncoded=null, createDate=null, updateDate=null, role=[Role(roleId=0, name=user), Role(roleId=0, name=admin)], gender=null, products=null)

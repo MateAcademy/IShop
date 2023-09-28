@@ -13,11 +13,9 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Product {
+public class Code {
 
-    Long productId;
-    String name;
-    double price;
-    String description;
+    String value;
+    User user;
 
 }
